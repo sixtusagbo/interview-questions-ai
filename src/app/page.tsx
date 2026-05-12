@@ -1,6 +1,8 @@
+import { QuestionGenerator } from "@/components/QuestionGenerator";
+
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-8 px-6 py-16">
+    <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-10 px-6 py-16">
       <header className="flex flex-col gap-2">
         <h1 className="text-3xl font-semibold tracking-tight">
           Interview Question Generator
@@ -10,6 +12,7 @@ export default function Home() {
           to the role.
         </p>
       </header>
+      <QuestionGenerator />
     </main>
   );
 }
