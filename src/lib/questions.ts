@@ -1,5 +1,5 @@
 import { zodTextFormat } from "openai/helpers/zod";
-import { openai } from "@/lib/openai";
+import { getOpenAI } from "@/lib/openai";
 import { QuestionsResponseSchema, type QuestionsResponse } from "@/lib/schema";
 
 export const MODEL = "gpt-5-nano";
@@ -23,7 +23,7 @@ Do not include personal information, candidate names, or company-specific detail
 export async function generateQuestions(
   jobTitle: string,
 ): Promise<QuestionsResponse> {
-  const response = await openai.responses.parse({
+  const response = await getOpenAI().responses.parse({
     model: MODEL,
     instructions: SYSTEM_INSTRUCTIONS,
     input: `Job title: ${jobTitle}`,
