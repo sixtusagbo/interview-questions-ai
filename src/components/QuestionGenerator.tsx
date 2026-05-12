@@ -59,7 +59,7 @@ export function QuestionGenerator() {
           disabled={loading || !jobTitle.trim()}
           className="rounded-lg bg-zinc-900 px-6 py-3 text-base font-medium text-white transition hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
-          {loading ? "Generating…" : "Generate questions"}
+          {loading ? "Loading…" : "Generate questions"}
         </button>
       </form>
 
