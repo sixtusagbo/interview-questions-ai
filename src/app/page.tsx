@@ -1,4 +1,5 @@
 import { QuestionGenerator } from "@/components/QuestionGenerator";
+import { MODEL } from "@/lib/questions";
 
 export default function Home() {
   return (
@@ -13,6 +14,18 @@ export default function Home() {
         </p>
       </header>
       <QuestionGenerator />
+      <footer className="mt-auto pt-8 text-xs text-zinc-500 dark:text-zinc-500">
+        Powered by OpenAI {MODEL}.{" "}
+        <a
+          href="https://github.com/sixtusagbo/interview-questions-ai"
+          className="underline-offset-2 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source
+        </a>
+        .
+      </footer>
     </main>
   );
 }
