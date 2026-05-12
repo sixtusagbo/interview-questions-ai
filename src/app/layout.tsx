@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Interview Question Generator",
+  title: "Interview AI",
   description:
     "Generate three thoughtful interview questions for any role, powered by OpenAI.",
 };
