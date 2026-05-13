@@ -4,7 +4,7 @@ Give it a job title. It returns three role-specific interview questions — one 
 
 Built as a 30-minute technical screen exercise.
 
-**Live:** _coming after Vercel deploy_
+**Live:** https://interview-questions-ai.vercel.app
 
 ## Stack
 
